@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import { EventFilters } from '../components';
+import { EventFilters } from './EventFilters';
 
 describe('Component: EventFilters', () => {
   const props = {};

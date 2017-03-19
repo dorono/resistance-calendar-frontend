@@ -1,6 +1,9 @@
 import React from 'react';
-import { Layout, EventList, Header, Footer } from '../components';
-import { fixtureApi } from '../services';
+import { Header } from '../../components/Header';
+import { Footer } from '../../components/Footer';
+import { Layout  } from '../../containers/EventList';
+import { Layout } from '../../containers/Layout';
+import { fixtureApi } from '../../services';
 
 export default class Index extends React.Component {
   static async getInitialProps () {

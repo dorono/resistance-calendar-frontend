@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Layout } from '../components';
-import { fixtureApi } from '../services';
+import { Layout } from '../../containers';
+import { fixtureApi } from '../../services';
 
 export default class EventPage extends Component {
   static async getInitialProps ({query}) {

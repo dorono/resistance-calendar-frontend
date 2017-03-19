@@ -1,4 +1,4 @@
-import { Layout } from '../components';
+import { Layout } from '../../containers/Layout/Layout';
 
 export default () => (
   <Layout>

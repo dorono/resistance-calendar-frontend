@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from 'enzyme';
 
-import { Menu } from '../components';
+import AboutUs from '../../pages/aboutUs';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  render(<Menu />, div);
+  render(<AboutUs />, div);
 });

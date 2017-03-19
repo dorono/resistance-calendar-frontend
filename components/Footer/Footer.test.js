@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import { Header } from '../components';
+import { Footer } from './Footer';
 
-describe('Component: Header', () => {
+describe('Component: Footer', () => {
   it('renders without crashing', () => {
-    const wrapper = shallow(<Header />);
+    const wrapper = shallow(<Footer />);
     expect(wrapper).toHaveLength(1);
   });
 });

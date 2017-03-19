@@ -1,5 +1,6 @@
 import React from 'react';
-import { EventCard, EventFilters } from './';
+import { EventCard } from '../../EventCard';
+import { EventFilters } from '../../EventFilters';
 
 export default class EventList extends React.Component {
   constructor (props) {
