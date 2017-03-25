@@ -63,6 +63,7 @@ class AddEvent extends Component {
   }
 
   handleSubmit(event) {
+    console.log('calling this');
     // See API at https://formspree.io/
     event.preventDefault();
     const { eventName, email, eventLink, notes } = this.state;
@@ -112,7 +113,7 @@ class AddEvent extends Component {
             required
             onChange={this.handleInputChange}
           />
-          <div className={styles.error}>{this.state.errorMessage.email}</div>
+          <div id="email-err" className={styles.error}>{this.state.errorMessage.email}</div>
         </fieldset>
         <fieldset className={styles.fieldset}>
           <label htmlFor="eventLink">Link to Event:</label>
@@ -123,7 +124,7 @@ class AddEvent extends Component {
             required
             onChange={this.handleInputChange}
           />
-          <div className={styles.error}>{this.state.errorMessage.eventLink}</div>
+          <div id="email-error" className={styles.error}>{this.state.errorMessage.eventLink}</div>
         </fieldset>
         <fieldset className={styles.fieldset}>
           <label htmlFor="notes">Notes or Comments: </label>
