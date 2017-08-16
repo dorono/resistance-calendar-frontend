@@ -1,10 +1,12 @@
 import React, { Component, PropTypes } from 'react';
+import Autolinker from 'autolinker';
 
 import { DateBlock, Loading, SocialBtns } from '../';
 import { eventsAPI } from '../../api';
 import { dateTimeUtils, urlUtils } from '../../utils';
 import { devMode } from '../../config';
 import styles from './EventDetails.sass';
+
 
 const renderAddress = (location) => {
   const { address_lines: addressLines, locality, region, postal_code: postalCode } = location;
@@ -92,7 +94,7 @@ class EventDetails extends Component {
       location
     } = event;
 
-    const descriptionHtml = description ? { __html: description.replace(/\n/g, '<br/>') } : null;
+    const descriptionHtml = description ? { __html: Autolinker.link(description.replace(/\n/g, '<br/>')) } : null;
 
     const featuredImageUrlOrDefault = (!devMode && featuredImageUrl) ?
       urlUtils.getImageUrl(featuredImageUrl, 'c_lfill,w_800') :
