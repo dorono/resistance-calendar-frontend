@@ -1,4 +1,6 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+
 
 import { EventSearchInput, EventDateFilter, EventLocationFilter, RsvpFilter } from '../';
 import styles from './EventFilters.sass';

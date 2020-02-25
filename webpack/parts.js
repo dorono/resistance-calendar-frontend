@@ -169,8 +169,6 @@ function getStyleLoaders(isGlobalStyles) {
         sourceMap: true,
         modules: true,
         importLoaders: 2,
-        camelCase: true,
-        localIdentName: '[name]__[local]__[hash:base64:5]'
       }
     },
     {

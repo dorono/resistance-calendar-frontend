@@ -1,6 +1,8 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import _ from 'lodash';
-import FaMapMarker from 'react-icons/lib/fa/map-marker';
+import {FaMapMarker} from 'react-icons/fa';
 
 import styles from './EventLocationFilter.sass';
 

@@ -1,4 +1,6 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+
 import GoogleAnalytics from 'react-ga';
 
 // Unfortunately cannot easily test: https://github.com/react-ga/react-ga/issues/96

@@ -1,7 +1,9 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+
 import { Link } from 'react-router-dom';
 import _ from 'lodash';
-import FaArrowLeft from 'react-icons/lib/fa/arrow-left';
+import {FaArrowLeft} from 'react-icons/fa';
 
 import { EventDetails } from '../';
 import styles from './EventDetailsContainer.sass';

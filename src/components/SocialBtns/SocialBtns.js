@@ -1,7 +1,8 @@
 /* eslint react/no-unused-prop-types: 0 */
-import React, { PropTypes, Component } from 'react';
-import FaFacebookSquare from 'react-icons/lib/fa/facebook-square';
-import FaTwitter from 'react-icons/lib/fa/twitter';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+import {FaFacebookSquare, FaTwitter} from 'react-icons/fa';
 import moment from 'moment';
 import styles from './SocialBtns.sass';
 import { facebookSDK } from '../../services';

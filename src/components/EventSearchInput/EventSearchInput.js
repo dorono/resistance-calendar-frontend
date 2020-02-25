@@ -1,5 +1,7 @@
-import React, { PropTypes, Component } from 'react';
-import FaSearch from 'react-icons/lib/fa/search';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+import {FaSearch} from 'react-icons/fa';
 
 import styles from './EventSearchInput.sass';
 

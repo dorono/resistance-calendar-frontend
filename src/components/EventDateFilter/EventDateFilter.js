@@ -1,7 +1,9 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
-import FaCalendarO from 'react-icons/lib/fa/calendar-o';
+import {FaCalendar} from 'react-icons/fa';
 
 import styles from './EventDateFilter.sass';
 
@@ -15,7 +17,7 @@ class CustomDatepickerInput extends Component {  // eslint-disable-line react/pr
         className={`react-datepicker-ignore-onclickoutside ${styles.dateFilterBtn}`}
         onClick={this.props.onClick}
       >
-        <FaCalendarO />
+        <FaCalendar />
         <span>{this.props.value}</span>
       </button>
     );
@@ -29,12 +31,12 @@ CustomDatepickerInput.propTypes = {
 
 const EventDateFilter = (props) => {
   const { startDate, updateFilters, placeholderText, isClearable } = props;
-
+  const selected = moment(startDate).toDate();
   return (
     <div className={styles.dateFilter}>
       <DatePicker
-        dateFormat="ddd MMM D"
-        selected={startDate}
+        dateFormat="ddd MMM d"
+        selected={selected}
         customInput={<CustomDatepickerInput />}
         onChange={date => updateFilters({ startDate: date })}
         isClearable={isClearable}
